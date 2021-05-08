@@ -2,8 +2,6 @@ import React from 'react'
 import styled from 'styled-components';
 
 const StyleBodyRegular1 = styled.p`
-//@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
-    //font-family: Lora;
     @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
     font-family: Poppins;
     font-style: normal;
