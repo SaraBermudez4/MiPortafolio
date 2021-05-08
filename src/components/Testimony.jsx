@@ -11,17 +11,8 @@ const StyledPerfiles = styled(Image)`
     border-radius:100%;
 `
 
-const StyledTitulo1 = styled.h1`
-    display:block;
-    align-self: stretch;
+const StyledTitulo2 = styled(BodyRegular1)`
     @media (max-width: 768px) {
-        display:none;
-    }
-`
-const StyledTitulo2 = styled.h1`
-    display:none;
-    @media (max-width: 768px) {
-        display:block;
         margin-bottom:24px;
         align-self: stretch;
     }
@@ -50,8 +41,8 @@ class Testimony extends Component {
                             <h1 style={{ color: "#F25F4C"}}><BodyBold2 name={this.state.names} /></h1>
                         </Col>
                     </Row2>
-                    <StyledTitulo1><BodyRegular1 name={this.state.testimonios} /></StyledTitulo1>
-                    <StyledTitulo2><BodyRegular2 name={this.state.testimonios} /></StyledTitulo2>
+                    <StyledTitulo2 name={this.state.testimonios} />
+                    
                 </Col>
             </>
         )
