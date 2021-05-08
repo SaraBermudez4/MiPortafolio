@@ -77,6 +77,10 @@ const StyledButton2 = styled(Button)`
     &:hover ${StyledButton2} {
     background-color: #F25F4C;
     }
+    @media (max-width: 768px) {
+        width:100%;
+        height: 48px;
+    }
 `
 
 class Proyect1 extends Component {
@@ -100,7 +104,7 @@ class Proyect1 extends Component {
     render() {
         return (
             <>
-                <Col>
+                <Col className="project-tile">
                     <StyledDivImage>
                         <StyledImg src={this.state.imagen} alt="Imagen de proyecto" />
                         <StyledDivI>
@@ -113,11 +117,11 @@ class Proyect1 extends Component {
                             </div>
                             <Row2 xs={1} md={2}>
                                 <Col xs={12} md={12} md={{ order: 1 }} xs={{ order: 2 }} >
-                                    <a href={this.state.linkPagina} target="_blanck"><StyledButton1 variant="danger" className="me-5">Ver proyecto completo</StyledButton1>
+                                    <a href={this.state.linkPagina} target="_blank"><StyledButton1 variant="danger" className="me-5">Ver proyecto completo</StyledButton1>
                                     </a>
                                 </Col>
                                 <Col xs={12} md={{ order: 2 }} xs={{ order: 1 }} style={{ marginBottom: "16px" }}>
-                                    <a href={this.state.linkRepositorio} target="_blanck"></a><StyledButton2 variant="outline-danger">Ver codigo</StyledButton2>
+                                    <a href={this.state.linkRepositorio} target="_blank"></a><StyledButton2 variant="outline-danger">Ver codigo</StyledButton2>
                                 </Col>
                             </Row2>
                         </StyledDivI>

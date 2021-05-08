@@ -104,7 +104,7 @@ const App = () => {
                     <Proyect1 proyectos={["Príncipe fresco", "La serie está protagonizada por Will Smith como una versión ficticia de sí...", Img2, "https://github.com/SaraBermudez4/paginaPrincipeFresco", "https://sarabermudez4.github.io/paginaPrincipeFresco/build/index.html"]} />
                 </Row2>
                 <StyleDivMasProyectos>
-                    <a href="https://github.com/SaraBermudez4" target="_blanck"><StyledButton variant="outline-danger">Ver más proyectos <StyledIcon icon={faArrowRight} /></StyledButton></a>
+                    <a href="https://github.com/SaraBermudez4" target="_blank"><StyledButton variant="outline-danger">Ver más proyectos <StyledIcon icon={faArrowRight} /></StyledButton></a>
                 </StyleDivMasProyectos>
             </Proyects>
             <Services>

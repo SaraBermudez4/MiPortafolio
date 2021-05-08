@@ -55,23 +55,23 @@ const Footer = () => {
                 <StyeledCol md={3} mx={4}>
                     <Row2>
                         <Col>
-                            <a href="https://github.com/SaraBermudez4" target="_blanck">
+                            <a href="https://github.com/SaraBermudez4" target="_blank">
                                 <StyledIcon icon={faGithub} style={{ color: "white" }} />
                             </a>
                         </Col>
                         <Col>
-                            <a href="https://www.instagram.com/repoyito4" target="_blanck">
-                                <StyledIcon icon={faInstagram} style={{ color: "white" }} />
+                            <a href="https://www.instagram.com/repoyito4" target="_blank" id="profile-link">
+                                <StyledIcon icon={faInstagram} style={{ color: "white" }}/>
                             </a>
                         </Col>
                         <Col>
-                            <a href="https://www.facebook.com/sara.bermudezalvarez.4" target="_blanck">
+                            <a href="https://www.facebook.com/sara.bermudezalvarez.4" target="_blank">
                                 <StyledIcon icon={faFacebook} style={{ color: "white" }} />
                             </a>
                         </Col>
 
                         <Col>
-                            <a href="https://twitter.com/Repoyito4" target="_blanck">
+                            <a href="https://twitter.com/Repoyito4" target="_blank">
                                 <StyledIcon icon={faTwitter} style={{ color: "white" }} />
                             </a>
                         </Col>
