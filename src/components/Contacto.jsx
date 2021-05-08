@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import { Form, Button } from 'react-bootstrap'
 
 import { BodyRegular2 } from '../styles/Body'
-import { Headline2 } from '../styles/Headline'
+import { Headline2, Headline4 } from '../styles/Headline'
 import { Button2 } from '../styles/Button'
 
 const StyledDiv = styled.div`
@@ -12,6 +12,11 @@ const StyledDiv = styled.div`
     width: 546px;
     height: 733px;
     padding: 48px;
+
+    @media (max-width: 768px) {
+        width: 320px;
+        padding: 20px;
+    }
 `
 
 const StyledFormControl = styled(Form.Control)`
@@ -24,10 +29,38 @@ const StyledFormControl = styled(Form.Control)`
     font-weight: normal;
     font-size: 20px;
     line-height: 40px;  
+
+    @media (max-width: 768px) {
+        width: 100%;
+    }
 `
 const StyledButtonForm = styled(Button)`
     width: 450px;
     height: 64px;
+    background-color: #F25F4C;
+    &:hover ${StyledButtonForm} {
+    background-color: #e24c39;
+    }
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+`
+
+const StyledTitulo1 = styled.h1`
+    display:block;
+    color: white;
+    text-align:left;
+    @media (max-width: 768px) {
+        display:none;
+    }
+`
+const StyledTitulo2 = styled.h1`
+    display:none;
+    @media (max-width: 768px) {
+        display:block;
+        color: white;
+        text-align:left;
+    }
 `
 class Contacto extends Component {
 
@@ -66,16 +99,17 @@ class Contacto extends Component {
     render() {
         return (
             <StyledDiv>
-                <h1 style={{ color: "white" }}><Headline2 name="Contacto" /></h1>
-                <h2 style={{ marginBottom: "48px" }}><BodyRegular2 name="Si está interesado en trabajar conmigo en su próximo proyecto, no dude en ponerse en contacto." /></h2>
+                <StyledTitulo1><Headline2 name="Contacto" /></StyledTitulo1>
+                <StyledTitulo2><Headline4 name="Contacto" /></StyledTitulo2>
+                <h2 style={{ marginBottom: "48px", textAlign: "left", color: "#A7A9BE" }}><BodyRegular2 name="Si está interesado en trabajar conmigo en su próximo proyecto, no dude en ponerse en contacto." /></h2>
                 <Form onSubmit={this.handleSubmit}>
                     <Form.Group controlId="formBasicEmail">
-                        <StyledFormControl type="text" placeholder="Nombre completo" name="name" id="name" value={this.state.name} onChange={this.handleInputChange} required />
-                        <StyledFormControl type="email" placeholder="Correo electronico" name="email" id="email" value={this.state.email} onChange={this.handleInputChange} required />
-                        <StyledFormControl style={{ height: "181px", padding: "0.375rem 0.75rem" }} as="textarea" rows={7} placeholder="Mensaje" id="message" name="message" value={this.state.message} onChange={this.handleInputChange} required />
+                        <StyledFormControl type="text" placeholder="Nombre completo" name="name" value={this.state.name} onChange={this.handleInputChange} required />
+                        <StyledFormControl type="email" placeholder="Correo electronico" name="email" value={this.state.email} onChange={this.handleInputChange} required />
+                        <StyledFormControl style={{ height: "181px", padding: "0.375rem 0.75rem" }} as="textarea" rows={7} placeholder="Mensaje" name="message" value={this.state.message} onChange={this.handleInputChange} required />
                     </Form.Group>
                     <StyledButtonForm variant="danger" type="submit">
-                        <Button2 name="Mensaje" />
+                        <Button2 name="Enviar mensaje" />
                     </StyledButtonForm>
                 </Form>
                 <a href="mailto:me@bermudezalvarezsaraestefania@gmail.com" id="correo" style={{ display: "none" }}>link

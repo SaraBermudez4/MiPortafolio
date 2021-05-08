@@ -2,13 +2,29 @@ import React, { Component } from 'react'
 import 'bootstrap/dist/css/bootstrap.css';
 import styled from 'styled-components';
 
-import { Col, Image, Row } from 'react-bootstrap'
-import { BodyBold2, BodyRegular1 } from '../styles/Body'
-
+import { Col, Image} from 'react-bootstrap'
+import { BodyBold2, BodyRegular1, BodyRegular2 } from '../styles/Body'
+import {Row2} from '../styles/RowContainer'
 const StyledPerfiles = styled(Image)`
     width: 48px;
     height: 48px;
     border-radius:100%;
+`
+
+const StyledTitulo1 = styled.h1`
+    display:block;
+    align-self: stretch;
+    @media (max-width: 768px) {
+        display:none;
+    }
+`
+const StyledTitulo2 = styled.h1`
+    display:none;
+    @media (max-width: 768px) {
+        display:block;
+        margin-bottom:24px;
+        align-self: stretch;
+    }
 `
 
 class Testimony extends Component {
@@ -25,16 +41,17 @@ class Testimony extends Component {
     render() {
         return (
             <>
-                <Col>
-                    <Row style={{ marginTop: "48px" }}>
-                        <Col sm={2} style={{ marginBottom: "16px" }} >
+                <Col xs = {12} md={4}>
+                    <Row2 >
+                        <Col md={2} xs={2} style={{ marginBottom: "16px" }} >
                             <StyledPerfiles src={this.state.imagen} alt="Imagen de usuario" />
                         </Col>
                         <Col>
-                            <h1 style={{ color: "#F25F4C" }}><BodyBold2 name={this.state.names} /></h1>
+                            <h1 style={{ color: "#F25F4C"}}><BodyBold2 name={this.state.names} /></h1>
                         </Col>
-                    </Row>
-                    <BodyRegular1 name={this.state.testimonios} />
+                    </Row2>
+                    <StyledTitulo1><BodyRegular1 name={this.state.testimonios} /></StyledTitulo1>
+                    <StyledTitulo2><BodyRegular2 name={this.state.testimonios} /></StyledTitulo2>
                 </Col>
             </>
         )

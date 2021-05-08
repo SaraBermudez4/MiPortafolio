@@ -6,6 +6,9 @@ const MainStyled = styled.div`
     //justify-content: center;
     padding: 80px 72px 80px 72px; 
     background: linear-gradient(45deg, #FFD9D9 0%, #FF6450 100%);
+    @media (max-width: 768px) {
+        padding: 40px 20px 40px 20px;
+    }
 `;
 
 const Services = ({ children }) => {

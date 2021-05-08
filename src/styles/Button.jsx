@@ -20,7 +20,6 @@ const StyleCaption = styled.p`
     font-size: 12px;
     line-height: 22px;
     text-align: center;
-    color: #A7A9BE;
 `
 
 export const Button2 = ({ name }) => <StyleButton> {name} </StyleButton>;

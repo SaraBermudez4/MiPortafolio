@@ -19,7 +19,6 @@ const StyleBodyRegular2 = styled.p`
     font-weight: normal;
     font-size: 20px;
     line-height: 32px;
-    color: #A7A9BE;
 `
 
 const StyleBodyBold1 = styled.p`
@@ -39,7 +38,7 @@ const StyleBodyBold2 = styled.p`
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
-    line-height: 32px;
+    line-height: 40px;
 `
 
 export const BodyRegular1 = ({ name }) => <StyleBodyRegular1> {name} </StyleBodyRegular1>;

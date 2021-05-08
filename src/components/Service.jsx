@@ -1,33 +1,71 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.css';
+import styled from 'styled-components'
 import { Col } from 'react-bootstrap'
 
-import { BodyRegular1 } from '../styles/Body'
-import { Headline2, Headline4 } from '../styles/Headline'
-import Row2 from '../styles/RowContainer'
+import { BodyRegular1, BodyRegular2 } from '../styles/Body'
+import { Headline2, Headline4, Headline5 } from '../styles/Headline'
+import {Row2} from '../styles/RowContainer'
+
+
+const StyledTitulo1 = styled.h1`
+    display:block;
+    margin-bottom : 28px;
+    color:#0F0E17;
+    @media (max-width: 768px) {
+        display:none;
+    }
+`
+const StyledTitulo2 = styled.h1`
+    display:none;
+    @media (max-width: 768px) {
+        display:block;
+        margin-bottom:16px;
+        color:#0F0E17;
+    }
+`
 
 const Service = () => {
     return (
         <>
-            <h1 style={{ marginBottom: "48px" }}><Headline2 name="Servicios" /></h1>
+            <StyledTitulo1><Headline2 name="Servicios" /></StyledTitulo1>
+            <StyledTitulo2><Headline4 name="Servicios" /></StyledTitulo2>
             <Row2>
-                <Col>
-                    <Headline4 name="Diseño" />
-                    <BodyRegular1 name="Experiencia de usuario" />
-                    <BodyRegular1 name="Interfaz de usuario" />
-                    <BodyRegular1 name="Aplicaciones web" />
-                    <BodyRegular1 name="Prueba de concepto" />
+                <Col xs = {12} md={4}>
+                    <StyledTitulo1><Headline4 name="Diseño" /></StyledTitulo1>
+                    <StyledTitulo2><Headline5 name="Diseño" /></StyledTitulo2>
+
+                    <StyledTitulo1><BodyRegular1 name="Experiencia de usuario" /></StyledTitulo1>
+                    <StyledTitulo1><BodyRegular1 name="Interfaz de usuario" /></StyledTitulo1>
+                    <StyledTitulo1><BodyRegular1 name="Aplicaciones web" /></StyledTitulo1>
+                    <StyledTitulo1><BodyRegular1 name="Prueba de concepto" /></StyledTitulo1>
+
+                    <StyledTitulo2><BodyRegular2 name="Experiencia de usuario" /></StyledTitulo2>
+                    <StyledTitulo2><BodyRegular2 name="Interfaz de usuario" /></StyledTitulo2>
+                    <StyledTitulo2><BodyRegular2 name="Aplicaciones web" /></StyledTitulo2>
+                    <StyledTitulo2 style = {{marginBottom:"56px"}}><BodyRegular2 name="Prueba de concepto" /></StyledTitulo2>
                 </Col>
-                <Col>
-                    <Headline4 name="Desarrollo" />
-                    <BodyRegular1 name="Aplicaciones móviles" />
-                    <BodyRegular1 name="Sitios web" />
-                    <BodyRegular1 name="Aplicaciones web progresivas" />
+                <Col xs = {12} md={4}>
+                    <StyledTitulo1><Headline4 name="Desarrollo" /></StyledTitulo1>
+                    <StyledTitulo2><Headline5 name="Desarrollo" /></StyledTitulo2>
+
+                    <StyledTitulo1><BodyRegular1 name="Aplicaciones móviles" /></StyledTitulo1>
+                    <StyledTitulo1><BodyRegular1 name="Sitios web" /></StyledTitulo1>
+                    <StyledTitulo1><BodyRegular1 name="Aplicaciones web progresivas" /></StyledTitulo1>
+
+                    <StyledTitulo2><BodyRegular2 name="Aplicaciones móviles" /></StyledTitulo2>
+                    <StyledTitulo2><BodyRegular2 name="Sitios web" /></StyledTitulo2>
+                    <StyledTitulo2 style = {{marginBottom:"56px"}}><BodyRegular2 name="Aplicaciones web progresivas" /></StyledTitulo2>
                 </Col>
-                <Col>
-                    <Headline4 name="Marca" />
-                    <BodyRegular1 name="Identidad de la marca" />
-                    <BodyRegular1 name="Estrategia de marca" />
+                <Col xs = {12} md={4}>
+                    <StyledTitulo1><Headline4 name="Marca" /></StyledTitulo1>
+                    <StyledTitulo2><Headline5 name="Marca" /></StyledTitulo2>
+
+                    <StyledTitulo1><BodyRegular1 name="Identidad de la marca" /></StyledTitulo1>
+                    <StyledTitulo1><BodyRegular1 name="Estrategia de marca" /></StyledTitulo1>
+
+                    <StyledTitulo2><BodyRegular2 name="Identidad de la marca" /></StyledTitulo2>
+                    <StyledTitulo2 style = {{marginBottom:"56px"}}><BodyRegular2 name="Estrategia de marca" /></StyledTitulo2>
                 </Col>
             </Row2>
         </>
@@ -36,8 +74,8 @@ const Service = () => {
 
 /*
 <Button variant="dark" className="me-5">Ver servicios de diseño</Button>
-<Button variant="dark" className="me-5">Ver servicios de desarrollo</Button>
-<Button variant="dark" className="me-5">Ver servicios de marca</Button>
+                <Button variant="dark" className="me-5">Ver servicios de desarrollo</Button>
+                <Button variant="dark" className="me-5">Ver servicios de marca</Button>
 */
 
 export default Service

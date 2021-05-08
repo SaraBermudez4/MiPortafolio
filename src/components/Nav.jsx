@@ -11,7 +11,11 @@ import { faHeart } from '@fortawesome/free-solid-svg-icons'
 const StyleButtonNav = styled.nav`
     margin-left: 40%;
     margin-right: 72px;
-    
+    @media (max-width: 768px) {
+        margin-left: 0;
+        margin-right: 0;
+        display:none;
+    } 
 `
 const StyleNavBar = styled(Navbar)`
     height: 96px;
@@ -20,6 +24,9 @@ const StyleNavBar = styled(Navbar)`
     padding: 31px 72px 24px 72px;
     position: fixed;
     z-index: 100;
+    @media (max-width: 768px) {
+        padding:10px;
+    }
 `
 
 const StyleButton = styled(Button)`
@@ -28,7 +35,7 @@ const StyleButton = styled(Button)`
 
     &:hover ${StyleButton} {
     background-color: #F25F4C;
-  }
+    }
 `
 const StyledNavLink = styled(Nav.Link)`
     &:hover {
@@ -40,16 +47,47 @@ const StyledIcon = styled(FontAwesomeIcon)`
     width: 35px !important; 
     height: 35px; 
     color: #F25F4C;
+    
 `
 
+const StyledNavCollapse = styled(Navbar.Collapse)`
+    @media (max-width: 768px) {
+        background-color: #0F0E17 !important;
+        padding: 15px;
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+`
+
+const StyledNavBarHeart = styled(Navbar.Brand)`
+    @media (max-width: 768px) {
+        margin-left: 20%;
+    }
+`
+const StyleButtonCollapse = styled(Button)`
+    width: 206px;
+    height: 48px;
+    display:none;
+    &:hover ${StyleButtonCollapse} {
+    background-color: #F25F4C;
+    }
+    @media (max-width: 768px) {
+        display: block;
+    }
+`
 const NavH = () => {
     return (
-        <StyleNavBar collapseOnSelect expand="lg" variant="dark">
-            <Navbar.Brand className="animate__animated animate__heartBeat animate__slower" href="#Hola">
+        <StyleNavBar collapseOnSelect expand="lg" variant="dark" >
+            <StyledNavBarHeart className="animate__animated animate__heartBeat animate__slower" href="#Hola">
                 <StyledIcon icon={faHeart} />
+            </StyledNavBarHeart>
+            <Navbar.Brand>
+            <a href="../images/Hojadevida.pdf" download="HojaDeVida">
+                    <StyleButtonCollapse variant="outline-danger">Descargar Curriculum</StyleButtonCollapse>
+                </a>
             </Navbar.Brand>
-            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-            <Navbar.Collapse id="responsive-navbar-nav">
+            <Navbar.Toggle aria-controls="responsive-navbar-nav" style={{ position: "absolute" }} />
+            <StyledNavCollapse id="responsive-navbar-nav">
                 <Nav className="mr-auto">
                     <StyledNavLink href="#Hola"><BodyRegular2 name="Hola" /></StyledNavLink>
                     <StyledNavLink href="#Proyectos"><BodyRegular2 name="Proyectos" /></StyledNavLink>
@@ -58,9 +96,11 @@ const NavH = () => {
                     <StyledNavLink href="#Contacto"><BodyRegular2 name="Contacto" /></StyledNavLink>
                 </Nav>
                 <StyleButtonNav>
-                    <StyleButton variant="outline-danger">Descargar Curriculum</StyleButton>
+                    <a href="..\images\Hojadevida.pdf" download="Hojadevida.pdf">
+                        <StyleButton variant="outline-danger">Descargar Curriculum</StyleButton>
+                    </a>
                 </StyleButtonNav>
-            </Navbar.Collapse>
+            </StyledNavCollapse>
         </StyleNavBar>
     )
 }
