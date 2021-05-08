@@ -1,6 +1,7 @@
 {
   "name": "miportafolio",
   "version": "1.0.0",
+  "homepage": "https://SaraBermudez4.github.io/MiPortafolio",
   "description": "",
   "main": "index.js",
   "dependencies": {
@@ -23,6 +24,7 @@
     "babel-loader": "^8.2.2",
     "css-loader": "^5.2.4",
     "file-loader": "^6.2.0",
+    "gh-pages": "^3.1.0",
     "html-loader": "^2.1.2",
     "html-webpack-plugin": "^5.3.1",
     "image-webpack-loader": "^7.0.1",
@@ -36,7 +38,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack serve --mode development",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "predeploy" :"npm run build",
+    "deploy" : "gh-pages -d build"
   },
   "author": "",
   "license": "ISC"
