@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
+<link href="https://fonts.googleapis.com/css2?family=Cantarell&family=Lora&family=Nunito:wght@700&family=Poppins&display=swap" rel="stylesheet"></link>
 
 const StyleBodyRegular1 = styled.p`
     @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
@@ -11,7 +12,7 @@ const StyleBodyRegular1 = styled.p`
 `
 
 const StyleBodyRegular2 = styled.p`
-@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
     font-family: Lora;
     font-style: normal;
     font-weight: normal;
@@ -31,7 +32,7 @@ const StyleBodyBold1 = styled.p`
 `
 
 const StyleBodyBold2 = styled.p`
-@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
     font-family: Lora;
     font-style: normal;
     font-weight: bold;

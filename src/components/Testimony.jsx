@@ -2,20 +2,15 @@ import React, { Component } from 'react'
 import 'bootstrap/dist/css/bootstrap.css';
 import styled from 'styled-components';
 
+import '../styles/BodyRegular1.css';
+
 import { Col, Image} from 'react-bootstrap'
-import { BodyBold2, BodyRegular1, BodyRegular2 } from '../styles/Body'
+import { BodyBold2 } from '../styles/Body'
 import {Row2} from '../styles/RowContainer'
 const StyledPerfiles = styled(Image)`
     width: 48px;
     height: 48px;
     border-radius:100%;
-`
-
-const StyledTitulo2 = styled(BodyRegular1)`
-    @media (max-width: 768px) {
-        margin-bottom:24px;
-        align-self: stretch;
-    }
 `
 
 class Testimony extends Component {
@@ -41,7 +36,7 @@ class Testimony extends Component {
                             <h1 style={{ color: "#F25F4C"}}><BodyBold2 name={this.state.names} /></h1>
                         </Col>
                     </Row2>
-                    <StyledTitulo2 name={this.state.testimonios} />
+                    <p className = "intento">{this.state.testimonios} </p>
                     
                 </Col>
             </>

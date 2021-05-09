@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
-<link href="https://fonts.googleapis.com/css2?family=Cantarell&family=Lora:wght@400;700&family=Nunito:wght@700&family=Poppins&display=swap" rel="stylesheet"></link>
+<link href="https://fonts.googleapis.com/css2?family=Cantarell&family=Lora&family=Nunito:wght@700&family=Poppins&display=swap" rel="stylesheet"></link>
 
 const StyleButton = styled.p`
     @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');

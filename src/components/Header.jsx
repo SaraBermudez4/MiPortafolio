@@ -5,13 +5,14 @@ import 'bootstrap/dist/css/bootstrap.css';
 import { Col, Image } from 'react-bootstrap';
 
 import { Headline1, Headline4 } from '../styles/Headline'
-import { BodyRegular1 } from '../styles/Body'
 import {Row2, Container2} from '../styles/RowContainer'
 
 import Img from '../images/perfil.jpeg'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons'
+
+import '../styles/BodyRegular1.css';
 
 const HeaderStyled = styled(Container2)`
     color:white;
@@ -59,7 +60,7 @@ const Header = () => {
                         <StyledTitulo2><Headline4 name="¡Hola a todos!" /></StyledTitulo2>
                         <StyledTitulo1><Headline1 name="Soy Sara Bermudez" /></StyledTitulo1>
                         <StyledTitulo2><Headline4 name="Soy Sara Bermudez" /></StyledTitulo2>
-                        <BodyRegular1 name="Programadora que le pone mucho esfuerzo y dedicación a sus trabajos para dejar clientes felices y satisfechos." />
+                        <p className="intento">Programadora que le pone mucho esfuerzo y dedicación a sus trabajos para dejar clientes felices y satisfechos." </p>
                         <a href="#Proyectos" >
                             <StyledIcon icon={faArrowDown} />
                         </a>

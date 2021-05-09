@@ -5,8 +5,10 @@ import styled from 'styled-components'
 import { Button, Col, Image} from 'react-bootstrap';
 
 import { Headline5 } from '../styles/Headline';
-import { BodyRegular1, BodyRegular2 } from '../styles/Body';
+import {  BodyRegular2 } from '../styles/Body';
 import {Row2} from '../styles/RowContainer'
+
+import '../styles/BodyRegular1.css';
 
 const StyledDivImage = styled.div`
    height: 520px;
@@ -112,7 +114,7 @@ class Proyect1 extends Component {
                                 <Headline5 name={this.state.titulo} />
                             </div>
                             <div style={{ color: "#A7A9BE" }}>
-                                <StyledTitulo1><BodyRegular1 name={this.state.description} /></StyledTitulo1>
+                                <StyledTitulo1><p className="intento">{this.state.description}</p></StyledTitulo1>
                                 <StyledTitulo2><BodyRegular2 name={this.state.description} /></StyledTitulo2>
                             </div>
                             <Row2 xs={1} md={2}>
