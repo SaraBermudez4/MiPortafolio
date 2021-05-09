@@ -123,7 +123,7 @@ class Proyect1 extends Component {
                                     </a>
                                 </Col>
                                 <Col xs={12} md={{ order: 2 }} xs={{ order: 1 }} style={{ marginBottom: "16px" }}>
-                                    <a href={this.state.linkRepositorio} target="_blank"></a><StyledButton2 variant="outline-danger">Ver codigo</StyledButton2>
+                                    <a href={this.state.linkRepositorio} target="_blank"><StyledButton2 variant="outline-danger">Ver codigo</StyledButton2></a>
                                 </Col>
                             </Row2>
                         </StyledDivI>

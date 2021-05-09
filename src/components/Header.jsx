@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import { Col, Image } from 'react-bootstrap';
 
 import { Headline1, Headline4 } from '../styles/Headline'
-import {Row2, Container2} from '../styles/RowContainer'
+import { Row2, Container2 } from '../styles/RowContainer'
 
 import Img from '../images/perfil.png'
 
@@ -60,12 +60,12 @@ const Header = () => {
                         <StyledTitulo2><Headline4 name="¡Hola a todos!" /></StyledTitulo2>
                         <StyledTitulo1><Headline1 name="Soy Sara Bermudez" /></StyledTitulo1>
                         <StyledTitulo2><Headline4 name="Soy Sara Bermudez" /></StyledTitulo2>
-                        <p className="intento">Programadora que le pone mucho esfuerzo y dedicación a sus trabajos para dejar clientes felices y satisfechos." </p>
+                        <p className="intento">Como programadora me gusta ponerle todo mi esfuerzo y dedicación a los proyectos en los que trabajo, logro llenar todas las espectativas y dejar clientes felices y satisfechos. Esta es mi vocación, mi razón de ser. </p>
                         <a href="#projects" >
                             <StyledIcon icon={faArrowDown} />
                         </a>
                     </TextHeader>
-                    <Col xs={{ order: 1 }} md={{ order: 2 }} style = {{textAlign: "center"}}>
+                    <Col xs={{ order: 1 }} md={{ order: 2 }} style={{ textAlign: "center" }}>
                         <StyledImgPerfil src={Img} alt="Imagen de perfil" roundedCircle fluid />
                     </Col>
                 </Row2>
