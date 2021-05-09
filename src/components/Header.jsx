@@ -61,7 +61,7 @@ const Header = () => {
                         <StyledTitulo1><Headline1 name="Soy Sara Bermudez" /></StyledTitulo1>
                         <StyledTitulo2><Headline4 name="Soy Sara Bermudez" /></StyledTitulo2>
                         <p className="intento">Programadora que le pone mucho esfuerzo y dedicación a sus trabajos para dejar clientes felices y satisfechos." </p>
-                        <a href="#Proyectos" >
+                        <a href="#projects" >
                             <StyledIcon icon={faArrowDown} />
                         </a>
                     </TextHeader>
