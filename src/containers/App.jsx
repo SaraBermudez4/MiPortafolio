@@ -34,6 +34,9 @@ import Banner from '../images/banner.jpg'
 import Contacto from '../components/Contacto';
 import Img from '../images/mascotas.jpg'
 import Img2 from '../images/principeFresco.jpg'
+import Img3 from '../images/cajaMusical.JPG'
+import Img4 from '../images/frasesAleatorias.JPG'
+import Img5 from '../images/guajolotas.jpg'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
@@ -102,6 +105,9 @@ const App = () => {
                 <Row2 style={{ textAlign: "center" }}>
                     <Proyect1 proyectos={["Adopción de mascotas", "Adoptar puede ser una de las experiencias más grandiosas de tu...", Img, "https://github.com/SaraBermudez4/Sprint1/tree/main/Sprint1", "https://sarabermudez4.github.io/Sprint1/Sprint1/"]} />
                     <Proyect1 proyectos={["Príncipe fresco", "La serie está protagonizada por Will Smith como una versión ficticia de sí...", Img2, "https://github.com/SaraBermudez4/paginaPrincipeFresco", "https://sarabermudez4.github.io/paginaPrincipeFresco/build/index.html"]} />
+                    <Proyect1 proyectos={["Aplicación Guappjolotes", "Aplicación que te ayudará a ordenar tus guajolotas a domicilio. Platillo típico de....", Img5, "https://github.com/Guajo-Redux/guajolotas-redux", "https://guajo-redux.github.io/guajolotas-redux/"]} />
+                    <Proyect1 proyectos={["Frases Aleatorias", "Aplicación que genera frases motivacionales y frases de programación aleatorias...", Img4, "https://github.com/SaraBermudez4/FrasesAleatorias", "https://sarabermudez4.github.io/FrasesAleatorias/"]} />
+                    <Proyect1 proyectos={["Caja musical", "Una divertida caja de ritmos, se todo un dj creando obras musicales...", Img3, "https://github.com/SaraBermudez4/CajaMusical", "https://sarabermudez4.github.io/CajaMusical/"]} />
                 </Row2>
                 <StyleDivMasProyectos>
                     <a href="https://github.com/SaraBermudez4" target="_blank"><StyledButton variant="outline-danger">Ver más proyectos <StyledIcon icon={faArrowRight} /></StyledButton></a>

@@ -113,13 +113,4 @@ class NavH extends Component {
     }
 }
 
-/*
-<a href="../images/Hojadevida.pdf" download="" target="_blank">
-                        <StyleButton variant="outline-danger">Descargar Curriculum</StyleButton>
-                    </a>
-
-                    <form method="get" action="../images/Hojadevida.pdf">
-                        <StyleButton type="submit" variant="outline-danger">Download!</StyleButton>
-                    </form>
-*/
 export default NavH
