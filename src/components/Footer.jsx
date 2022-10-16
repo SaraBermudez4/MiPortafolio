@@ -60,7 +60,7 @@ const Footer = () => {
                             </a>
                         </Col>
                         <Col>
-                            <a href="https://www.instagram.com/repoyito4" target="_blank" id="profile-link">
+                            <a href="https://www.instagram.com/sara.bermudez_44" target="_blank" id="profile-link">
                                 <StyledIcon icon={faInstagram} style={{ color: "white" }}/>
                             </a>
                         </Col>
