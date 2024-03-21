@@ -44,7 +44,7 @@ const Footer = () => {
         <StyledFooter>
             <Row2 style={{ textAlign: "center", color: "#A7A9BE"}}>
                 <StyeledCol md={1} mx={1}>
-                    <StyledIcon icon={faHeart} style={{ color: "#F25F4C" }} />
+                    <StyledIcon icon={faHeart} style={{ color: "#A7D9A9" }} />
                 </StyeledCol>
                 <StyeledCol md={3} mx={3}>
                     <BodyRegular2 name="Hecho con ❤️ de Sara. " />

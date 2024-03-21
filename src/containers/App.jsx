@@ -56,7 +56,7 @@ const StyledButton = styled(Button)`
     height: 64px;
     
     &:hover ${StyledButton} {
-    background-color: #F25F4C;
+    background-color: #A7D9A9;
     }
 
     @media (max-width: 768px) {
@@ -68,7 +68,7 @@ const StyledButton = styled(Button)`
 const StyledIcon = styled(FontAwesomeIcon)`
     width: 24px;
     height: 24px; 
-    color: #F25F4C; 
+    color: #A7D9A9; 
     margin-left: 0px;
     margin-bottom: -5px;
 
@@ -105,7 +105,7 @@ const App = () => {
                     <Proyect1 proyectos={["Adopción de mascotas", "Adoptar puede ser una de las experiencias más grandiosas de tu...", Img, "https://github.com/SaraBermudez4/Sprint1/tree/main/Sprint1", "https://sarabermudez4.github.io/Sprint1/Sprint1/"]} />
                     <Proyect1 proyectos={["Aplicación Guappjolotes", "Aplicación que te ayudará a ordenar tus guajolotas a domicilio. Platillo típico de....", Img5, "https://github.com/Guajo-Redux/guajolotas-redux", "https://guajo-redux.github.io/guajolotas-redux/"]} />
                     <Proyect1 proyectos={["Frases Aleatorias", "Aplicación que genera frases motivacionales y frases de programación aleatorias...", Img4, "https://github.com/SaraBermudez4/FrasesAleatorias", "https://sarabermudez4.github.io/FrasesAleatorias/"]} />
-                    <Proyect1 proyectos={["Caja musical", "Una divertida caja de ritmos, se todo un dj creando obras musicales...", Img3, "https://github.com/SaraBermudez4/CajaMusical", "https://sarabermudez4.github.io/CajaMusical/"]} />
+                    <Proyect1 proyectos={["Caja musical", "Una divertida caja de ritmos, sé todo un DJ creando obras musicales...", Img3, "https://github.com/SaraBermudez4/CajaMusical", "https://sarabermudez4.github.io/CajaMusical/"]} />
                 </Row2>
                 <StyleDivMasProyectos>
                     <a href="https://github.com/SaraBermudez4" target="_blank"><StyledButton variant="outline-danger">Ver más proyectos <StyledIcon icon={faArrowRight} /></StyledButton></a>
@@ -119,7 +119,7 @@ const App = () => {
                 <StyledTitulo2><Headline4 name="Testimonios" /></StyledTitulo2>
                 <Container2 fluid>
                     <Row2>
-                        <Testimony personas={["Juana Gomez", "Tengo algunos años trabajando con Javascript y aún así aprendí varias cosas importantes de Sara y como utiliza Javascript en el día a día.", ImgMujer]} />
+                        <Testimony personas={["Juana Gomez", "Tengo algunos años trabajando con Javascript y aun así aprendí varias cosas importantes de Sara y como utiliza Javascript en el día a día.", ImgMujer]} />
                         <Testimony personas={["Dilan Maturana", "Me gusto ver el porqué de las cosas del core de React, saber la magia que ocurre por detrás, excelente compañera Sara gran vocación.", ImgHombre]} />
                         <Testimony personas={["Juan Martinez", "Ayuda a entender el porqué de las cosas, lo cual nos da el poder de aprovechar mejor el lenguaje y las herramientas que tenemos.", ImgHombre2]} />
                     </Row2>

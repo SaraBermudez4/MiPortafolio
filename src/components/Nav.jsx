@@ -34,19 +34,19 @@ const StyleButton = styled(Button)`
     height: 48px;
 
     &:hover ${StyleButton} {
-    background-color: #F25F4C;
+    background-color: #A7D9A9;
     }
 `
 const StyledNavLink = styled(Nav.Link)`
     &:hover {
-    background: #F25F4C;
+    background: #A7D9A9;
   }
 `
 
 const StyledIcon = styled(FontAwesomeIcon)`
     width: 35px !important; 
     height: 35px; 
-    color: #F25F4C;
+    color: #A7D9A9;
     
 `
 
@@ -69,7 +69,7 @@ const StyleButtonCollapse = styled(Button)`
     height: 48px;
     display:none;
     &:hover ${StyleButtonCollapse} {
-    background-color: #F25F4C;
+    background-color: #A7D9A9;
     }
     @media (max-width: 768px) {
         display: block;
@@ -89,7 +89,7 @@ class NavH extends Component {
                     <StyledIcon icon={faHeart} />
                 </StyledNavBarHeart>
                 <Navbar.Brand>
-                    <a href="HojaDeVida.pdf" download="" style={{textDecoration:"none"}}>
+                    <a href="HojaDeVida.pdf" download="HojaDeVida.pdf" style={{textDecoration:"none"}}>
                         <StyleButtonCollapse variant="outline-danger">Descargar Curriculum</StyleButtonCollapse>
                     </a>
                 </Navbar.Brand>
@@ -103,7 +103,7 @@ class NavH extends Component {
                         <StyledNavLink href="#Contacto"><BodyRegular2 name="Contacto" /></StyledNavLink>
                     </Nav>
                     <StyleButtonNav>
-                        <a href="HojaDeVida.pdf" download="" style={{textDecoration:"none"}}>
+                        <a href="HojaDeVida.pdf" download="HojaDeVida.pdf" style={{textDecoration:"none"}}>
                             <StyleButton variant="outline-danger">Descargar Curriculum</StyleButton>
                         </a>
                     </StyleButtonNav>

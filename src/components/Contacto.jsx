@@ -37,9 +37,9 @@ const StyledFormControl = styled(Form.Control)`
 const StyledButtonForm = styled(Button)`
     width: 450px;
     height: 64px;
-    background-color: #F25F4C;
+    background-color: #A7D9A9;
     &:hover ${StyledButtonForm} {
-    background-color: #e24c39;
+    background-color: #50deb0;
     }
     @media (max-width: 768px) {
         width: 100%;
@@ -105,7 +105,7 @@ class Contacto extends Component {
                 <Form onSubmit={this.handleSubmit}>
                     <Form.Group controlId="formBasicEmail">
                         <StyledFormControl type="text" placeholder="Nombre completo" name="name" value={this.state.name} onChange={this.handleInputChange} required />
-                        <StyledFormControl type="email" placeholder="Correo electronico" name="email" value={this.state.email} onChange={this.handleInputChange} required />
+                        <StyledFormControl type="email" placeholder="Correo electrónico" name="email" value={this.state.email} onChange={this.handleInputChange} required />
                         <StyledFormControl style={{ height: "181px", padding: "0.375rem 0.75rem" }} as="textarea" rows={7} placeholder="Mensaje" name="message" value={this.state.message} onChange={this.handleInputChange} required />
                     </Form.Group>
                     <StyledButtonForm variant="danger" type="submit">

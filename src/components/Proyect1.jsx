@@ -65,9 +65,9 @@ const StyledTitulo2 = styled.h1`
 `
 const StyledButton1 = styled(Button)`
     width:215px;
-    background-color: #F25F4C;
+    background-color: #A7D9A9;
     &:hover ${StyledButton1} {
-    background-color: #e24c39;
+    background-color: #50deb0;
     }
     @media (max-width: 768px) {
         width:100%;
@@ -77,7 +77,7 @@ const StyledButton1 = styled(Button)`
 const StyledButton2 = styled(Button)`
     width:215px;
     &:hover ${StyledButton2} {
-    background-color: #F25F4C;
+    background-color: #A7D9A9;
     }
     @media (max-width: 768px) {
         width:100%;

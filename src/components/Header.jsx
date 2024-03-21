@@ -46,7 +46,7 @@ const StyledImgPerfil = styled(Image)`
 const StyledIcon = styled(FontAwesomeIcon)`
     width: 56px !important; 
     height: 56px; 
-    color: #F25F4C;
+    color: #A7D9A9;
     margin-top: 32px;
 `
 
@@ -60,7 +60,7 @@ const Header = () => {
                         <StyledTitulo2><Headline4 name="¡Hola a todos!" /></StyledTitulo2>
                         <StyledTitulo1><Headline1 name="Soy Sara Bermudez" /></StyledTitulo1>
                         <StyledTitulo2><Headline4 name="Soy Sara Bermudez" /></StyledTitulo2>
-                        <p className="intento">Como programadora me gusta ponerle todo mi esfuerzo y dedicación a todo lo que hago, cumpliendo todas las espectativas y necesidades de mis clientes. Esta es mi vocación, mi razón de ser. </p>
+                        <p className="intento">Como programadora me gusta ponerle todo mi esfuerzo y dedicación a todo lo que hago, cumpliendo todas las expectativas y necesidades de mis clientes. Esta es mi vocación, mi razón de ser. </p>
                         <a href="#projects" >
                             <StyledIcon icon={faArrowDown} />
                         </a>
