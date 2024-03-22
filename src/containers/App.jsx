@@ -54,9 +54,13 @@ const StyleDivMasProyectos = styled.div`
 const StyledButton = styled(Button)`
     width: 297px;
     height: 64px;
-    
+    border-color: #A7D9A9;
+    color: #A7D9A9;
+    background-color: #0F0E17;
     &:hover ${StyledButton} {
-    background-color: #A7D9A9;
+        background-color: #A7D9A9;
+        border-color: #A7D9A9;
+        color: #0F0E17;
     }
 
     @media (max-width: 768px) {
@@ -71,9 +75,8 @@ const StyledIcon = styled(FontAwesomeIcon)`
     color: #A7D9A9; 
     margin-left: 0px;
     margin-bottom: -5px;
-
     &:hover{
-        color: #ffffff; 
+        color: #0F0E17; 
     }
 `
 
@@ -108,7 +111,7 @@ const App = () => {
                     <Proyect1 proyectos={["Caja musical", "Una divertida caja de ritmos, sé todo un DJ creando obras musicales...", Img3, "https://github.com/SaraBermudez4/CajaMusical", "https://sarabermudez4.github.io/CajaMusical/"]} />
                 </Row2>
                 <StyleDivMasProyectos>
-                    <a href="https://github.com/SaraBermudez4" target="_blank"><StyledButton variant="outline-danger">Ver más proyectos <StyledIcon icon={faArrowRight} /></StyledButton></a>
+                    <a href="https://github.com/SaraBermudez4" target="_blank"><StyledButton>Ver más proyectos <StyledIcon icon={faArrowRight} /></StyledButton></a>
                 </StyleDivMasProyectos>
             </Proyects>
             <Services>

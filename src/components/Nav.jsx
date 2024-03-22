@@ -32,9 +32,13 @@ const StyleNavBar = styled(Navbar)`
 const StyleButton = styled(Button)`
     width: 206px;
     height: 48px;
-
+    border-color: #A7D9A9;
+    color: #A7D9A9;
+    background-color: #0F0E17;
     &:hover ${StyleButton} {
-    background-color: #A7D9A9;
+        background-color: #A7D9A9;
+        border-color: #A7D9A9;
+        color: #0F0E17;
     }
 `
 const StyledNavLink = styled(Nav.Link)`
@@ -68,6 +72,8 @@ const StyleButtonCollapse = styled(Button)`
     width: 206px;
     height: 48px;
     display:none;
+    border-color: #A7D9A9;
+    color: #A7D9A9;
     &:hover ${StyleButtonCollapse} {
     background-color: #A7D9A9;
     }
@@ -79,7 +85,7 @@ const StyleButtonCollapse = styled(Button)`
 class NavH extends Component {
 
     fbShare() {
-        window.open('HojaDeVida.pdf');
+        window.open(require('./CVSaraBermudez.pdf'));
     }
 
     render() {
@@ -88,11 +94,11 @@ class NavH extends Component {
                 <StyledNavBarHeart className="animate__animated animate__heartBeat animate__slower" href="#welcome-section">
                     <StyledIcon icon={faHeart} />
                 </StyledNavBarHeart>
-                <Navbar.Brand>
-                    <a href="HojaDeVida.pdf" download="HojaDeVida.pdf" style={{textDecoration:"none"}}>
-                        <StyleButtonCollapse variant="outline-danger">Descargar Curriculum</StyleButtonCollapse>
+                {/* <Navbar.Brand>
+                    <a href="./CVSaraBermudez.pdf" download="CVSaraBermudez.pdf" style={{ textDecoration: "none" }} >
+                        <StyleButtonCollapse>Descargar Curriculum</StyleButtonCollapse>
                     </a>
-                </Navbar.Brand>
+                </Navbar.Brand> */}
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" style={{ position: "absolute" }} />
                 <StyledNavCollapse id="responsive-navbar-nav">
                     <Nav className="mr-auto">
@@ -102,11 +108,11 @@ class NavH extends Component {
                         <StyledNavLink href="#Testimonios"><BodyRegular2 name="Testimonios" /></StyledNavLink>
                         <StyledNavLink href="#Contacto"><BodyRegular2 name="Contacto" /></StyledNavLink>
                     </Nav>
-                    <StyleButtonNav>
-                        <a href="HojaDeVida.pdf" download="HojaDeVida.pdf" style={{textDecoration:"none"}}>
-                            <StyleButton variant="outline-danger">Descargar Curriculum</StyleButton>
+                    {/* <StyleButtonNav>
+                        <a href="./CVSaraBermudez.pdf" download="CVSaraBermudez.pdf" style={{ textDecoration: "none" }}>
+                            <StyleButton>Descargar Curriculum</StyleButton>
                         </a>
-                    </StyleButtonNav>
+                    </StyleButtonNav> */}
                 </StyledNavCollapse>
             </StyleNavBar>
         )

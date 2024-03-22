@@ -68,6 +68,18 @@ module.exports = {
           },
         ],
       },
+      {
+        test: /\.(pdf)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'assets/pdf/', // Cambia esto a la ruta donde quieres que se guarden los PDFs en tu directorio de salida
+            },
+          },
+        ],
+      },
     ],
   },
   //agregar plugin que instalamos para entender el archivo index y el que
@@ -88,6 +100,6 @@ module.exports = {
     //Habilitar para poder acceder a la información y mostrar cada una de las rutas
     historyApiFallback: true,
     port: 3005,
-    open: true
+    open: true,
   },
 };

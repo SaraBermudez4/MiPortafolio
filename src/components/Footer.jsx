@@ -4,15 +4,12 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 import { Col } from 'react-bootstrap';
 
-import {Row2} from '../styles/RowContainer'
+import { Row2 } from '../styles/RowContainer'
 import { BodyRegular2 } from '../styles/Body';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHeart } from '@fortawesome/free-solid-svg-icons'
-import { faGithub } from '@fortawesome/free-brands-svg-icons'
-import { faInstagram } from '@fortawesome/free-brands-svg-icons'
-import { faFacebook } from '@fortawesome/free-brands-svg-icons'
-import { faTwitter } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 const StyledFooter = styled.footer`
     position: absolute;
@@ -42,7 +39,7 @@ const StyeledCol = styled(Col)`
 const Footer = () => {
     return (
         <StyledFooter>
-            <Row2 style={{ textAlign: "center", color: "#A7A9BE"}}>
+            <Row2 style={{ textAlign: "center", color: "#A7A9BE" }}>
                 <StyeledCol md={1} mx={1}>
                     <StyledIcon icon={faHeart} style={{ color: "#A7D9A9" }} />
                 </StyeledCol>
@@ -50,9 +47,9 @@ const Footer = () => {
                     <BodyRegular2 name="Hecho con ❤️ de Sara. " />
                 </StyeledCol>
                 <StyeledCol md={5} mx={3}>
-                    <BodyRegular2 name="Copyright 2021 - Todos los derechos reservados." />
+                    <BodyRegular2 name="Copyright 2024 - Todos los derechos reservados." />
                 </StyeledCol>
-                <StyeledCol md={3} mx={4}>
+                <StyeledCol md={2} mx={2}>
                     <Row2>
                         <Col>
                             <a href="https://github.com/SaraBermudez4" target="_blank">
@@ -60,19 +57,8 @@ const Footer = () => {
                             </a>
                         </Col>
                         <Col>
-                            <a href="https://www.instagram.com/sara.bermudez_44" target="_blank" id="profile-link">
-                                <StyledIcon icon={faInstagram} style={{ color: "white" }}/>
-                            </a>
-                        </Col>
-                        <Col>
-                            <a href="https://www.facebook.com/sara.bermudezalvarez.4" target="_blank">
-                                <StyledIcon icon={faFacebook} style={{ color: "white" }} />
-                            </a>
-                        </Col>
-
-                        <Col>
-                            <a href="https://twitter.com/Repoyito4" target="_blank">
-                                <StyledIcon icon={faTwitter} style={{ color: "white" }} />
+                            <a href="https://www.linkedin.com/in/sara-bermudez-543906125/" target="_blank">
+                                <StyledIcon icon={faLinkedin} style={{ color: "white" }} />
                             </a>
                         </Col>
                     </Row2>
